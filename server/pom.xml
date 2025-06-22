@@ -11,6 +11,12 @@
             <artifactId>json</artifactId>
             <version>20250517</version>
         </dependency>
+        
+        <dependency>
+            <groupId>org.java-websocket</groupId>
+            <artifactId>Java-WebSocket</artifactId>
+            <version>1.5.4</version>
+        </dependency>
     </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
