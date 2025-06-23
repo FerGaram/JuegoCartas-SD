@@ -176,7 +176,7 @@ const PlayerHand: React.FC<{
                         cardString={cardString}
                         isPlayable={playable}
                         onClick={() => onCardPlay(index, cardString)}
-                        size="medium"
+                        size="large"
                     />
                 );
             })}

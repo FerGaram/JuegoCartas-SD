@@ -189,7 +189,7 @@ const Homepage: React.FC = () => {
                     <h2 className="text-4xl font-bold text-white mb-4">
                         MULTIVERSO
                     </h2>
-                    <p className="text-xl text-gray-300 max-w-2xl">
+                    <p className="text-xl font-bold text-white max-w-2xl">
                         Vive la experiencia UNO con algunos personajes de Mario Bros, Harry Potter, Halo y Minecraft
                     </p>
                 </div>
@@ -248,7 +248,7 @@ const Homepage: React.FC = () => {
 
                 {/* Indicador de tema actual */}
                 <div className="mb-12 text-center">
-                    <div className="text-white/60 text-sm mb-2">Tema destacado</div>
+                    <div className="text-white/60 text-sm mb-2">Temática por colores</div>
                     <div className={`inline-block px-6 py-3 rounded-full bg-gradient-to-r ${themes[currentThemeIndex].color} text-white font-bold`}>
                         <span className="mr-2">{themes[currentThemeIndex].icon}</span>
                         {themes[currentThemeIndex].name}
@@ -257,42 +257,29 @@ const Homepage: React.FC = () => {
                 </div>
 
                 {/* Botones de Acción */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-                    <Link to="/player-host">
-                        <button className="w-full group bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white px-8 py-4 rounded-2xl font-bold text-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center space-x-3">
-                            <Play className="w-8 h-8 group-hover:animate-bounce" />
-                            <span>H o s t</span>
-                        </button>
-                    </Link>
+                <div className="grid grid-cols-1 md:grid-cols-1 gap-6 mb-12">
 
                     <Link to="/select-player">
                         <button className="w-full group bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-4 rounded-2xl font-bold text-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center space-x-3">
                             <Users className="w-8 h-8 group-hover:animate-bounce" />
-                            <span>U n i r s e</span>
+                            <span>J u g a r</span>
                         </button>
                     </Link>
                 </div>
 
                 {/* Acciones Secundarias */}
                 <div className="flex flex-wrap justify-center gap-4">
-                    <Link to="/achievements">
+                    <Link to="/acercade">
                         <button className="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center space-x-2 hover:scale-105">
                             <Trophy className="w-5 h-5" />
-                            <span>Logros</span>
+                            <span>Acerca de Nostros</span>
                         </button>
                     </Link>
 
-                    <Link to="/settings">
-                        <button className="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center space-x-2 hover:scale-105">
-                            <Settings className="w-5 h-5" />
-                            <span>Configuración</span>
-                        </button>
-                    </Link>
-
-                    <Link to="/tutorial">
+                    <Link to="/instrucciones">
                         <button className="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center space-x-2 hover:scale-105">
                             <Gamepad2 className="w-5 h-5" />
-                            <span>Tutorial</span>
+                            <span>Instrucciones</span>
                         </button>
                     </Link>
                 </div>
